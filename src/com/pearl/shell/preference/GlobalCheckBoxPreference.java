@@ -14,23 +14,23 @@
  * limitations under the License.
  */
 
-package com.pearl.shell.preferences;
+package com.pearl.shell.preference;
 
 import android.content.Context;
 import android.support.v7.preference.CheckBoxPreference;
 import android.provider.Settings;
 import android.util.AttributeSet;
 
-public class SecureCheckBoxPreference extends CheckBoxPreference {
-    public SecureCheckBoxPreference(Context context, AttributeSet attrs, int defStyle) {
+public class GlobalCheckBoxPreference extends CheckBoxPreference {
+    public GlobalCheckBoxPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }
 
-    public SecureCheckBoxPreference(Context context, AttributeSet attrs) {
+    public GlobalCheckBoxPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public SecureCheckBoxPreference(Context context) {
+    public GlobalCheckBoxPreference(Context context) {
         super(context, null);
     }
 
@@ -42,7 +42,7 @@ public class SecureCheckBoxPreference extends CheckBoxPreference {
                 return true;
             }
 
-            Settings.Secure.putInt(getContext().getContentResolver(), getKey(), value ? 1 : 0);
+            Settings.Global.putInt(getContext().getContentResolver(), getKey(), value ? 1 : 0);
             return true;
         }
         return false;
@@ -54,7 +54,7 @@ public class SecureCheckBoxPreference extends CheckBoxPreference {
             return defaultReturnValue;
         }
 
-        return Settings.Secure.getInt(getContext().getContentResolver(),
+        return Settings.Global.getInt(getContext().getContentResolver(),
                 getKey(), defaultReturnValue ? 1 : 0) != 0;
     }
 

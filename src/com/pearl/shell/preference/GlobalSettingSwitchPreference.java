@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.pearl.shell.preferences;
+package com.pearl.shell.preference;
 
 import android.content.Context;
 import android.provider.Settings;
