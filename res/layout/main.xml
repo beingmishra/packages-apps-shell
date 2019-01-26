@@ -58,6 +58,7 @@
                             android:layout_marginTop="8dp"
                             android:layout_below="@id/image1"
                             android:text="@string/card1"
+                            android:textColor="@color/text_primary"
                             android:textAlignment="center"
                             android:textSize="24sp" />
 
@@ -96,6 +97,7 @@
                             android:layout_marginTop="8dp"
                             android:layout_below="@id/image2"
                             android:text="@string/card2"
+                            android:textColor="@color/text_primary"
                             android:textAlignment="center"
                             android:textSize="24sp" />
 
@@ -144,6 +146,7 @@
                             android:layout_marginTop="8dp"
                             android:layout_below="@id/image3"
                             android:text="@string/card3"
+                            android:textColor="@color/text_primary"
                             android:textAlignment="center"
                             android:textSize="24sp" />
 
@@ -182,6 +185,7 @@
                             android:layout_marginTop="8dp"
                             android:layout_below="@id/image4"
                             android:text="@string/card4"
+                            android:textColor="@color/text_primary"
                             android:textAlignment="center"
                             android:textSize="24sp" />
 
@@ -229,6 +233,7 @@
                             android:layout_marginStart="0dp"
                             android:layout_marginTop="8dp"
                             android:layout_below="@id/image5"
+                            android:textColor="@color/text_primary"
                             android:text="@string/card5"
                             android:textAlignment="center"
                             android:textSize="24sp" />
@@ -269,6 +274,7 @@
                             android:layout_below="@id/image6"
                             android:text="@string/card6"
                             android:textAlignment="center"
+                            android:textColor="@color/text_primary"
                             android:textSize="24sp" />
 
                     </RelativeLayout>
@@ -296,6 +302,7 @@
                 android:layout_centerVertical="true"
                 android:fontFamily="monospace"
                 android:text="About Us"
+                android:textColor="@color/text_primary"
                 android:textAlignment="center"
                 android:textSize="24sp"
                 android:textStyle="bold" />
